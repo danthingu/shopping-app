@@ -1,0 +1,20 @@
+mkdir Desktop/projects
+cd projects
+python -m venv myenvironment
+cd myenvironment
+dir
+Scripts\activate
+pip install django // make sure you are in (myenvironment)
+
+// check django version by go into myenvironment (virtual environment)
+TYPE:
+import django
+django.VERSION
+
+START PROJECT
+django-admin startproject perfectcushion
+cd perfectcushion
+python manage.py migrate
+
+RUN APPLICATION
+python manage.py runserver
